@@ -1,0 +1,33 @@
+#avatar_container{
+    display:flex;
+    gap:30px;
+}
+
+#avatar{
+    width:6rem;
+    height:6rem;
+    border-radius:4rem;
+    cursor:pointer;
+    transition: 0.2s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /* 호버 시 등장할 글자에 대한 스타일*/
+    color:black;
+    font-size:1rem;
+    letter-spacing:1px;
+}
+
+#avatar:hover{
+    transform:scale(1.05);
+    opacity:0.3;
+}
+
+#avatar_container .selected{
+    outline: 3px solid red;
+    outline-offset: 5px;
+}
+
+#avatar:nth-child(2){
+}
