@@ -1,5 +1,39 @@
+@import "./navigation.css";
+@import "./avatar.css";
+@import "./cssVariables.css";
+@import "./form.css";
+@import "./task.css";
+@import "./fullColorControll.css";
+
 *{
+    margin:0;
     box-sizing:border-box;
+}
+
+body{
+    background-color:var(--color-bg-light);
+    color:var(--color-text-dark);
+}
+body.dark{
+    background-color:var(--color-bg-dark);
+    color:var(--color-text-white);
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+button{
+    background-color:var(--color-main-accent);
+    border:none;
+    cursor:pointer;
+    padding:10px 12px;
+    color:var(--color-text-white);
+    border-radius:8px;
+    width:100%;
+    background: rgb(0,255,153);
+background: linear-gradient(317deg, rgba(0,255,153,1) 0%, rgba(0,233,140,1) 78%, rgba(90,255,140,1) 100%);
 }
 
 #layout{
@@ -7,8 +41,16 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    width:100vw;
+    height:100vh;
 }
 
-#main_title{
-    font-size:3rem;
+#main_screen{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    justify-content:center;
+    align-items:center;
+    font-weight:400;
+    font-family: 'Noto Sans KR', sans-serif;
 }
